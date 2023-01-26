@@ -2,7 +2,7 @@
 
 <img hspace="20" align="right" src="coding.gif" width='500'/>
 
-I currently work in Amazon Lab126 Hardware Compute Group as a SysDE ML Compilers Engineer - we came up with the [AZ1 Neural Edge Processor](https://www.mediatek.com/blog/amazon-az1-neural-edge-processor-powered-by-mediatek "AZ1 Neural Edge Processor"). I graduated with two research focussed masters from U. of Southern California in 2020. Prior to this I also have an integrated dual degree from Indian Institute of Technology, Kharagpur with two minors.  
+I currently work at Reservoir Labs, part of [Qualcomm AI Research](https://www.qualcomm.com/research/artificial-intelligence/ai-research) as a Senior Engineer. Prior to this, I worked at Amazon Lab126 Hardware Compute Group as a SysDE ML Compilers Engineer. I graduated with two research focussed masters from University of Southern California in 2020. Prior to this I also have an integrated dual degree from Indian Institute of Technology, Kharagpur with two minors.  
 
 <p align="center">
 <a href="https://www.linkedin.com/in/arnabsanyal17/" target="_blank" title="arnabsanyal17"><img hspace='2' src="linkedin.svg" width='35'/></a> <a href="https://stackoverflow.com/users/7517511/arnab-sanyal" target="_blank" title="user:7517511"><img hspace='2' src="stackoverflow.svg" width='35'/></a> <a href="https://www.instagram.com/arnabsanyal_/" target="_blank" title="arnabsanyal_"><img hspace='2' src="instagram.svg" width='35'/></a> <a href="https://scholar.google.com/citations?user=vUC7-ygAAAAJ" target="_blank" title="user:vUC7-ygAAAAJ"><img hspace='2' src="googlescholar.svg" width='35'/></a> <a href="https://medium.com/@arnabsanyal_15738" target="_blank" title="@arnabsanyal_15738"><img hspace='2' src="medium.svg" width='35'/></a>
