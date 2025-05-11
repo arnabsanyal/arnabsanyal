@@ -7,7 +7,7 @@ I am currently employed at [Advanced Micro Devices, Inc.](https://www.amd.com/en
 I have a pet cat, Oliver. He is quite chonky &#128516; and a very good boy. Check out his <a href="https://www.instagram.com/ollie.bear___/" target="_blank" title="ollie.bear___"><img hspace='1' src="instagram.svg" width='12'/></a>
 
 <p align="center">
-<a href="https://www.linkedin.com/in/arnabsanyal17/" target="_blank" title="arnabsanyal17"><img hspace='2' src="linkedin.svg" width='35'/></a> <a href="https://stackoverflow.com/users/7517511/arnab-sanyal" target="_blank" title="user:7517511"><img hspace='2' src="stackoverflow.svg" width='35'/></a> <a href="https://www.instagram.com/arnabsanyal_/" target="_blank" title="arnabsanyal_"><img hspace='2' src="instagram.svg" width='35'/></a> <a href="https://scholar.google.com/citations?user=vUC7-ygAAAAJ" target="_blank" title="user:vUC7-ygAAAAJ"><img hspace='2' src="googlescholar.svg" width='35'/></a> <a href="https://medium.com/@arnabsanyal_15738" target="_blank" title="@arnabsanyal_15738"><img hspace='2' src="medium.svg" width='35'/></a>
+<a href="https://www.linkedin.com/in/arnabsanyal17/" target="_blank" title="arnabsanyal17"><img hspace='2' src="linkedin.svg" width='35'/></a> <a href="https://stackoverflow.com/users/7517511/arnab-sanyal" target="_blank" title="user:7517511"><img hspace='2' src="stackoverflow.svg" width='35'/></a> <a href="https://www.instagram.com/arnabsanyal_/" target="_blank" title="arnabsanyal_"><img hspace='2' src="instagram.svg" width='35'/></a> <a href="https://scholar.google.com/citations?user=D9ebkwoAAAAJ" target="_blank" title="user:vUC7-ygAAAAJ"><img hspace='2' src="googlescholar.svg" width='35'/></a> <a href="https://medium.com/@arnabsanyal_15738" target="_blank" title="@arnabsanyal_15738"><img hspace='2' src="medium.svg" width='35'/></a>
 </p>
 
 ---
@@ -19,7 +19,7 @@ I have a pet cat, Oliver. He is quite chonky &#128516; and a very good boy. Chec
 - Algorithms and architecture co-design for AI accelerators focussed towards training/inference with lesser compute/energy budget. Published a paper in **ICASSP 2020**.
 
 <p align="center">
-<a href="https://drive.google.com/open?id=1RMrdG27K67UBXrz6XmN4FziB4Aj9k5WD" target="_blank" title="Resume"><img hspace='2' src="cv_sq.jpg" width='35'/></i></a> <a href="https://arxiv.org/pdf/1910.09876.pdf" target="_blank" title="Neural Network Training with Approximate Logarithmic Computations"><img hspace='2' src="pdf-file.svg" width='35'/></a>
+<a href="https://drive.google.com/open?id=1RMrdG27K67UBXrz6XmN4FziB4Aj9k5WD" target="_blank" title="Resume"><img hspace='2' src="cv_sq.jpg" width='35'/></i></a> <a href="https://arxiv.org/pdf/1910.09876.pdf" target="_blank" title="Neural Network Training with Approximate Logarithmic Computations"><img hspace='2' src="pdf-file.svg" width='35'/></a> <a href="https://arxiv.org/pdf/2505.02380.pdf" target="_blank" title="EntroLLM: Entropy Encoded Weight Compression for Efficient Large Language Model Inference on Edge Devices"><img hspace='2' src="pdf-file.svg" width='35'/></a>
 </p>
 
 
