@@ -43,13 +43,16 @@ I work on making generative AI cheap enough to run where it is needed: on phones
 
 | Thread | Focus | Papers |
 |---|---|---|
-| **Post-training quantization & number formats** | Choosing the format, not just the scale: INT, FP8, MX and NF4 formats picked per weight channel and per diffusion timestep, with no retraining. | Chameleon, EntroLLM |
-| **Entropy-coded model compression** | Bits that are cheaper to move: entropy-reducing quantization, Huffman coding and parallel decoding for bandwidth-starved devices. | EntroLLM, EntroMCU, OASIS, in-sensor compression |
-| **Hardware–algorithm co-design** | From kernels to microcontrollers: ternary GEMM kernels, KV-aware SRAM/Flash management for LLMs on Cortex-M, and multiplication-free log-domain training. | EntroMCU, log-domain training |
+| **Post-training quantization & number formats** | Choosing the format, not just the scale: INT, FP8, MX and NF4 formats picked per weight channel and per diffusion timestep, and GPTQ steered so llama.cpp's integer codes compress, with no retraining. | LazyWeights, Chameleon, EntroLLM |
+| **Entropy-coded model compression** | Bits that are cheaper to move: entropy-reducing quantization, Huffman coding and parallel decoding, in software or on demand in hardware, for bandwidth-starved devices. | LazyWeights, EntroLLM, EntroMCU, OASIS, in-sensor compression |
+| **Hardware–algorithm co-design** | From kernels to microcontrollers: a Huffman decode unit between DRAM and L2 for edge GPUs, ternary GEMM kernels, KV-aware SRAM/Flash management for LLMs on Cortex-M, and multiplication-free log-domain training. | LazyWeights, EntroMCU, log-domain training |
 | **Efficient perception: in-sensor & video** | Compute where the data is born: in-sensor encoders that compress representations on-chip, and real-time neuro-symbolic video understanding. | OASIS, in-sensor compression, RT-NeuS |
 
 ## Publications
 
+- **LazyWeights: Decode-on-Demand Edge LLMs**<br>
+  Arnab Sanyal, Gourav Datta, Sandeep P. Chinchali · *Preprint*, 2026<br>
+  [Project page](https://arnabsanyal.com/preprint/lazyweights.html) · [arXiv](https://arxiv.org/abs/2611.17108) · [Code](https://github.com/arnabsanyal/LazyWeights) · [Models](https://huggingface.co/collections/arnabsanyal/lazyweights-6af7242c458566ddfc0b34de)
 - **Chameleon: Dynamic Format Adapter for Efficient Diffusion**<br>
   Arnab Sanyal, Sandeep Chinchali · *Preprint, under review*, 2026<br>
   [Project page](https://arnabsanyal.com/preprint/chameleon.html) · [arXiv](https://arxiv.org/abs/2609.33496) · [Code](https://github.com/arnabsanyal/Chameleon)
