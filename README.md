@@ -92,6 +92,7 @@ I work on making generative AI cheap enough to run where it is needed: on phones
 - **Kernels & accelerators:** CUDA, Triton, AMD AI Engine, Qualcomm Hexagon HTP / HVX, Amazon AZ1 NPU, Arm Cortex-M (CMSIS-NN, Helium), NVIDIA Jetson (Nano, Orin), FPGA (Verilog, HLS, Zynq UltraScale+), RTL & ASIC flow (Yosys, OpenSTA, OpenROAD, ASAP7)
 - **Frameworks:** PyTorch, TensorFlow, ONNX Runtime, TensorRT, llama.cpp / GGUF (K- & I-quants), Hugging Face Transformers & Diffusers, lm-evaluation-harness
 - **Languages:** Python, C++, C, CUDA, Shell, MATLAB, Java, Assembly (AVR, ARM, MIPS), LaTeX
+- **Tools:** Linux, Git, Docker, CMake / Bazel, Slurm & HPC clusters, Nsight & on-device profilers, Vivado, Verilator · Icarus Verilog
 
 ## Academic service
 
