@@ -43,15 +43,15 @@ I work on making generative AI cheap enough to run where it is needed: on phones
 
 | Thread | Focus | Papers |
 |---|---|---|
-| **Post-training quantization & number formats** | Choosing the format, not just the scale: INT, FP8, MX and NF4 formats picked per weight channel and per diffusion timestep, and GPTQ steered so llama.cpp's integer codes compress, with no retraining. | LazyWeights, Chameleon, EntroLLM |
-| **Entropy-coded model compression** | Bits that are cheaper to move: entropy-reducing quantization, Huffman coding and parallel decoding, in software or on demand in hardware, for bandwidth-starved devices. | LazyWeights, EntroLLM, EntroMCU, OASIS, in-sensor compression |
-| **Hardware–algorithm co-design** | From kernels to microcontrollers: a Huffman decode unit between DRAM and L2 for edge GPUs, ternary GEMM kernels, KV-aware SRAM/Flash management for LLMs on Cortex-M, and multiplication-free log-domain training. | LazyWeights, EntroMCU, log-domain training |
-| **Efficient perception: in-sensor & video** | Compute where the data is born: in-sensor encoders that compress representations on-chip, and real-time neuro-symbolic video understanding. | OASIS, in-sensor compression, RT-NeuS |
+| **Post-training quantization & number formats** | Choosing the format, not just the scale: INT, FP8, MX and NF4 formats picked per weight channel and per diffusion timestep, and GPTQ steered so llama.cpp's integer codes compress, with no retraining. | LazyWeights (under review), Chameleon (under review), EntroLLM (ICASSP 2026) |
+| **Entropy-coded model compression** | Bits that are cheaper to move: entropy-reducing quantization, Huffman coding and parallel decoding, in software or on demand in hardware, for bandwidth-starved devices. | LazyWeights (under review), EntroLLM (ICASSP 2026), EntroMCU (ISVLSI 2026), OASIS (ISVLSI 2026), in-sensor compression (IEEE TETC, under review) |
+| **Hardware–algorithm co-design** | From kernels to microcontrollers: a Huffman decode unit between DRAM and L2 for edge GPUs, ternary GEMM kernels, KV-aware SRAM/Flash management for LLMs on Cortex-M, and multiplication-free log-domain training. | LazyWeights (under review), EntroMCU (ISVLSI 2026), log-domain training (ICASSP 2020), EntroLLM (ICASSP 2026) |
+| **Efficient perception: in-sensor & video** | Compute where the data is born: in-sensor encoders that compress representations on-chip, and real-time neuro-symbolic video understanding. | OASIS (ISVLSI 2026), in-sensor compression (IEEE TETC, under review), RT-NeuS (NeuS 2026) |
 
 ## Publications
 
 - **LazyWeights: Decode-on-Demand Edge LLMs**<br>
-  Arnab Sanyal, Gourav Datta, Sandeep P. Chinchali · *Preprint*, 2026<br>
+  Arnab Sanyal, Gourav Datta, Sandeep P. Chinchali · *Preprint, under review*, 2026<br>
   [Project page](https://arnabsanyal.com/preprint/lazyweights.html) · [arXiv](https://arxiv.org/abs/2611.17108) · [Code](https://github.com/arnabsanyal/LazyWeights) · [Models](https://huggingface.co/collections/arnabsanyal/lazyweights-6af7242c458566ddfc0b34de)
 - **Chameleon: Dynamic Format Adapter for Efficient Diffusion**<br>
   Arnab Sanyal, Sandeep Chinchali · *Preprint, under review*, 2026<br>
@@ -87,11 +87,12 @@ I work on making generative AI cheap enough to run where it is needed: on phones
 
 ## Skills
 
-- **Efficient AI:** post-training quantization, FP8 / MX / INT4 / NF4 formats, quantization-aware training, GPTQ · AWQ · SmoothQuant, mixed precision, entropy & Huffman coding, pruning, distillation, KV-cache optimization, logarithmic number systems
+- **Efficient AI:** post-training quantization, FP8 / MX / INT4 / NF4 formats, quantization-aware training, GPTQ · AWQ · SmoothQuant, mixed precision, entropy coding (Huffman, rANS), pruning, distillation, KV-cache optimization, speculative decoding (prompt lookup), logarithmic number systems
 - **ML compilers:** MLIR, StableHLO, LLVM, TVM, XLA, torch.compile / Dynamo / Inductor, torch.fx, ONNX graph optimization, ExecuTorch
-- **Kernels & accelerators:** CUDA, Triton, AMD AI Engine, Qualcomm Hexagon HTP / HVX, Amazon AZ1 NPU, Arm Cortex-M (CMSIS-NN, Helium), NVIDIA Jetson, FPGA (Verilog, HLS)
-- **Frameworks:** PyTorch, TensorFlow, ONNX Runtime, TensorRT, Hugging Face Transformers & Diffusers
+- **Kernels & accelerators:** CUDA, Triton, AMD AI Engine, Qualcomm Hexagon HTP / HVX, Amazon AZ1 NPU, Arm Cortex-M (CMSIS-NN, Helium), NVIDIA Jetson (Nano, Orin), FPGA (Verilog, HLS, Zynq UltraScale+), RTL & ASIC flow (Yosys, OpenSTA, OpenROAD, ASAP7)
+- **Frameworks:** PyTorch, TensorFlow, ONNX Runtime, TensorRT, llama.cpp / GGUF (K- & I-quants), Hugging Face Transformers & Diffusers, lm-evaluation-harness
 - **Languages:** Python, C++, C, CUDA, Shell, MATLAB, Java, Assembly (AVR, ARM, MIPS), LaTeX
+- **Tools:** Linux, Git, Docker, CMake / Bazel, Slurm & HPC clusters, Nsight & on-device profilers, Vivado, Verilator · Icarus Verilog
 
 ## Academic service
 
