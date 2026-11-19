@@ -102,6 +102,7 @@ I work on making generative AI cheap enough to run where it is needed: on phones
 ## Academic service
 
 - **Website Chair**, [IEEE Workshop on Signal Processing Systems (SiPS 2027)](https://sips2027.github.io/)
+- **TPC Member**, Research Track AI2-II: AI/ML Algorithms and Models, [Design Automation Conference (DAC 2027)](https://www.dac.com/)
 - **Reviewer:** CVPR, ICML (2026) · ICASSP, WACV, ISLPED (2025) · VLSID (2023) · PATMOS (2019) · RAW, FCCM (2018) · H2RC, IA3 (2017)
 - **Judge (chair)**, USC ECE Deep Learning Symposium, 2019 and 2020
 
