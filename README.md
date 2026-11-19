@@ -18,6 +18,8 @@
   <a href="https://arnabsanyal.com/"><b>arnabsanyal.com</b></a> ·
   <a href="https://scholar.google.com/citations?user=D9ebkwoAAAAJ">Google Scholar</a> ·
   <a href="https://orcid.org/0000-0001-6365-6769">ORCID</a> ·
+  <a href="https://www.researchgate.net/profile/Arnab-Sanyal-4">ResearchGate</a> ·
+  <a href="https://www.alphaxiv.org/@arnab-sanyal">alphaXiv</a> ·
   <a href="https://www.linkedin.com/in/arnabsanyal17/">LinkedIn</a> ·
   <a href="https://stackoverflow.com/users/7517511/senior-mle">Stack Overflow</a> ·
   <a href="https://medium.com/@arnabsanyal_15738">Medium</a> ·
@@ -39,17 +41,20 @@ I have a pet cat, Oliver. He is quite chonky &#128516; and a very good boy. Chec
 
 ## Research
 
-I work on making generative AI cheap enough to run where it is needed: on phones, cars, image sensors and microcontrollers. My papers sit where number formats, compression and hardware meet.
+I work on making generative AI cheap enough to run where it is needed: on phones, cars, image sensors, wearables and microcontrollers. My papers sit where number formats, compression and hardware meet.
 
 | Thread | Focus | Papers |
 |---|---|---|
 | **Post-training quantization & number formats** | Choosing the format, not just the scale: INT, FP8, MX and NF4 formats picked per weight channel and per diffusion timestep, and GPTQ steered so llama.cpp's integer codes compress, with no retraining. | LazyWeights (under review), Chameleon (under review), EntroLLM (ICASSP 2026) |
 | **Entropy-coded model compression** | Bits that are cheaper to move: entropy-reducing quantization, Huffman coding and parallel decoding, in software or on demand in hardware, for bandwidth-starved devices. | LazyWeights (under review), EntroLLM (ICASSP 2026), EntroMCU (ISVLSI 2026), OASIS (ISVLSI 2026), in-sensor compression (IEEE TETC, under review) |
-| **Hardware–algorithm co-design** | From kernels to microcontrollers: a Huffman decode unit between DRAM and L2 for edge GPUs, ternary GEMM kernels, KV-aware SRAM/Flash management for LLMs on Cortex-M, and multiplication-free log-domain training. | LazyWeights (under review), EntroMCU (ISVLSI 2026), log-domain training (ICASSP 2020), EntroLLM (ICASSP 2026) |
-| **Efficient perception: in-sensor & video** | Compute where the data is born: in-sensor encoders that compress representations on-chip, and real-time neuro-symbolic video understanding. | OASIS (ISVLSI 2026), in-sensor compression (IEEE TETC, under review), RT-NeuS (NeuS 2026) |
+| **Hardware–algorithm co-design** | From kernels to microcontrollers: a Huffman decode unit between DRAM and L2 for edge GPUs, ternary GEMM kernels, KV-aware SRAM/Flash management for LLMs on Cortex-M, tiled execution with Flash/SRAM/TCM-aware placement for wearable EEG, and multiplication-free log-domain training. | EEG2MCU (DATE 2027), LazyWeights (under review), EntroMCU (ISVLSI 2026), log-domain training (ICASSP 2020), EntroLLM (ICASSP 2026) |
+| **Efficient perception: in-sensor, wearable & video** | Compute where the data is born: in-sensor encoders that compress representations on-chip, wearable EEG inference on microcontrollers that treats electrode count as a hardware design variable, and real-time neuro-symbolic video understanding. | EEG2MCU (DATE 2027), OASIS (ISVLSI 2026), in-sensor compression (IEEE TETC, under review), RT-NeuS (NeuS 2026) |
 
 ## Publications
 
+- **EEG2MCU: Sensing-to-Execution Co-Design for Wearable EEG Inference**<br>
+  Shoma Yukawa, Meghna Roychowdhury, Arnab Sanyal, Chengwei Zhou, Shreyas Sen, Gourav Datta · *DATE 2027*<br>
+  [arXiv](https://arxiv.org/abs/2611.23619) · [PDF](https://arxiv.org/pdf/2611.23619)
 - **LazyWeights: Decode-on-Demand Edge LLMs**<br>
   Arnab Sanyal, Gourav Datta, Sandeep P. Chinchali · *Preprint, under review*, 2026<br>
   [Project page](https://arnabsanyal.com/preprint/lazyweights.html) · [arXiv](https://arxiv.org/abs/2611.17108) · [Code](https://github.com/arnabsanyal/LazyWeights) · [Models](https://huggingface.co/collections/arnabsanyal/lazyweights-6af7242c458566ddfc0b34de)
@@ -87,12 +92,12 @@ I work on making generative AI cheap enough to run where it is needed: on phones
 
 ## Skills
 
-- **Efficient AI:** post-training quantization, FP8 / MX / INT4 / NF4 formats, quantization-aware training, GPTQ · AWQ · SmoothQuant, mixed precision, entropy coding (Huffman, rANS), pruning, distillation, KV-cache optimization, speculative decoding (prompt lookup), logarithmic number systems
+- **Efficient AI:** post-training quantization, FP8 / MX / INT4 / NF4 formats, quantization-aware training, GPTQ · AWQ · SmoothQuant, mixed precision, entropy coding (Huffman, rANS), pruning, distillation, KV-cache optimization, INT8 inference on microcontrollers (CNN, Transformer, Mamba), memory-aware tiled inference (TinyML), speculative decoding (prompt lookup), logarithmic number systems
 - **ML compilers:** MLIR, StableHLO, LLVM, TVM, XLA, torch.compile / Dynamo / Inductor, torch.fx, ONNX graph optimization, ExecuTorch
-- **Kernels & accelerators:** CUDA, Triton, AMD AI Engine, Qualcomm Hexagon HTP / HVX, Amazon AZ1 NPU, Arm Cortex-M (CMSIS-NN, Helium), NVIDIA Jetson (Nano, Orin), FPGA (Verilog, HLS, Zynq UltraScale+), RTL & ASIC flow (Yosys, OpenSTA, OpenROAD, ASAP7)
+- **Kernels & accelerators:** CUDA, Triton, AMD AI Engine, Qualcomm Hexagon HTP / HVX, Amazon AZ1 NPU, Arm Cortex-M (M7, M55; CMSIS-NN, Helium), STM32 MCUs, Flash / SRAM / TCM memory placement, NVIDIA Jetson (Nano, Orin), FPGA (Verilog, HLS, Zynq UltraScale+), RTL & ASIC flow (Yosys, OpenSTA, OpenROAD, ASAP7)
 - **Frameworks:** PyTorch, TensorFlow, ONNX Runtime, TensorRT, llama.cpp / GGUF (K- & I-quants), Hugging Face Transformers & Diffusers, lm-evaluation-harness
 - **Languages:** Python, C++, C, CUDA, Shell, MATLAB, Java, Assembly (AVR, ARM, MIPS), LaTeX
-- **Tools:** Linux, Git, Docker, CMake / Bazel, Slurm & HPC clusters, Nsight & on-device profilers, Vivado, Verilator · Icarus Verilog
+- **Tools:** Linux, Git, Docker, CMake / Bazel, Slurm & HPC clusters, Nsight & on-device profilers (incl. DWT cycle counters), Vivado, Verilator · Icarus Verilog
 
 ## Academic service
 
